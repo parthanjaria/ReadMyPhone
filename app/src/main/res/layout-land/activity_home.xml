@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Activity.HomeActivity"
+    android:padding="10dp"
+    >
+<LinearLayout
+    android:gravity="center"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dip">
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progress_files_scans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            custom:progress_unreached_color="@color/colorPrimary"
+            custom:progress_reached_color="@color/colorPrimaryDark"
+
+            custom:progress_unreached_bar_height="0.75dp"
+            custom:progress_reached_bar_height="1.5dp"
+
+            custom:progress_text_size="10sp"
+            custom:progress_text_color="@color/colorAccent"
+            custom:progress_text_offset="1dp"
+            custom:progress_text_visibility="visible"
+
+            custom:progress_max="100"
+            custom:progress_current="0"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:text="@string/scannedfiles"
+            />
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/start_stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:id="@+id/report_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myfiles" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/file_names"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_weight="0.3"
+        />
+
+</LinearLayout>

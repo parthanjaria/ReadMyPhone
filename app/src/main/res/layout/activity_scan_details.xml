@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.ScanDetailsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_total_files"
+                    style="@style/tv_header" />
+
+                <TextView
+                    android:id="@+id/total_files_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tv_sub_header" />
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/view" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_total_files"
+                style="@style/tv_header" />
+
+            <TextView
+                android:id="@+id/total_files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tv_sub_header"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/view" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_total_files"
+                style="@style/tv_header"  />
+
+            <TextView
+                android:id="@+id/average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tv_sub_header"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/view" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_top_5_file_sizes"
+                style="@style/tv_header"  />
+
+            <TextView
+                android:id="@+id/file_exe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tv_sub_header"  />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/view" />
+        <include layout="@layout/scan_details_row"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/lets_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_header"
+            android:text="@string/lets_share"
+            />
+    </LinearLayout>
+</LinearLayout>

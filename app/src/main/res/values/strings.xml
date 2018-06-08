@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ReadMyPhone</string>
+    <string name="scan">SCAN</string>
+    <string name="stop">STOP</string>
+    <string name="myfiles">MY FIlES</string>
+    <string name="my_pref">sharedprefkey</string>
+    <string name="my_pref_names">my_files_names</string>
+    <string name="my_pref_total_files">total_no_of_files</string>
+    <string name="my_pref_total_files_size">total_files_size</string>
+    <string name="my_pref_file_exe">exe</string>
+    <string name="scan_yet">Scanning hasn\'t started/finished yet.</string>
+    <string name="no_permission">No Permission given</string>
+    <string name="complete_scan">Completed Scan, Checkout the Report</string>
+    <string name="tv_total_files">Total Files</string>
+    <string name="tv_total_files_size">Total Files Size</string>
+    <string name="tv_avg_files">AVG of files</string>
+    <string name="tv_top_5_file_sizes">Top 5 File Sizes</string>
+    <string name="lets_share">Let\'s Share</string>
+    <string name="scannedfiles">SCANNED FILES</string>
+
+</resources>
